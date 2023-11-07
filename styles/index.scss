@@ -15,6 +15,11 @@
 
 // =====		LAYOUT			=====
 @import 'layout/hero';
+@import 'layout/header';
+@import 'layout/services';
 
 // =====		COMPONENTS		=====
 @import 'components/button';
+
+
+@import "https://github.com/locomotivemtl/locomotive-scroll/blob/v5-beta/bundled/locomotive-scroll.css";

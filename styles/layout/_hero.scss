@@ -2,11 +2,130 @@
 	height: 100vh;
 	&__content {
 		width: 100%;
-		@include page-grid;
-		@include center-align;
+	}
 
-		h2 {
-			text-align: center;
+	&__heading {
+		margin-bottom: 0;
+		font-weight: 600;
+		color: #25205F;
+	}
+
+	&__head {
+		display: flex;
+		margin-bottom: 5vh;
+		width: 90%;
+		margin-inline: auto;
+		align-items: center;
+		justify-content: space-between;
+
+		&__img {
+			width: calc(30vw - 15px);
+			height: 20vh;
+			background-repeat: no-repeat;
+			background: url("../../images/routing.webp");
+			background-position: center;
+			background-size: cover;
+			border-radius: 20px;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__shape {
+		width: 90%;
+		margin: auto;
+		height: 55vh;
+		background-image: url("../../images/texture.jpg");
+		background-position: center;
+		background-size: cover;
+		border-radius: 25px;
+		position: relative;
+		overflow: hidden;
+
+		&__tags {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1000;
+			display: flex;
+			color: white;
+			column-gap: 2vw;
+			max-width: 45%;
+			flex-wrap: wrap;
+			padding: 2vh 2vw;
+		}
+
+		&__tag {
+			border-radius: 20px;
+			background: rgba(30, 30, 30, 0.6);
+			padding: 0.5vw 2vw;
+			position: relative;
+
+			&__inner {
+				position: absolute;
+				width: 100%;
+				top: 0;
+				left: 0;
+				border-radius: 20px;
+				height: 100%;
+				backdrop-filter: blur(2px);
+				z-index: 1;
+			}
+
+			p {
+				position: relative;
+				margin: 0;
+				z-index: 19;
+			}
+		}
+
+		video {
+			width: 100%;
+			@include center-align;
+		}
+
+		&__inner {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30vw;
+			height: 15vh;
+			border-bottom-left-radius: 25px;
+			background-color: white;
+			z-index: 100;
+
+			p {
+				z-index: 100;
+				padding-left: 20px;
+			}
+
+			&__left {
+				z-index: 10;
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+				background-color: white;
+				-webkit-mask-image: radial-gradient(circle 20px at 0 0, transparent 0, transparent 20px, black 21px);
+				transform: rotate(270deg);
+			}
+
+			&__right {
+				position: absolute;
+				bottom: -20px;
+				right: -20px;
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+				background-color: white;
+				-webkit-mask-image: radial-gradient(circle 20px at 0 0, transparent 0, transparent 20px, black 21px);
+				transform: rotate(270deg);
+			}
 		}
 	}
 }

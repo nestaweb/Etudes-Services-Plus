@@ -22,6 +22,15 @@ html.lenis {
 	width: 100%;
 }
 
+html[data-scroll-orientation="horizontal"] {
+    body {
+        width: fit-content;
+    }
+    [data-scroll-container] {
+        display: flex;
+    }
+}
+
 [style*='--aspect-ratio'] > img {
 	height: auto;
 	object-fit: cover;

@@ -10,11 +10,10 @@
 	border-radius: 100000px;
 	width: max-content;
 	height: max-content;
-	margin-left: auto;
 
 
 	&--dark {
-		background-color: var(--color-button--dark);
+		background-color: #25205F;
 		color: var(--color-button-text--light);
 
 		svg path {

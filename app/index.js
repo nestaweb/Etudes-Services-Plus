@@ -1,5 +1,6 @@
 import "../styles/index.scss";
 import Lenis from "@studio-freight/lenis";
+import LocomotiveScroll from 'locomotive-scroll';
 import Home from "./pages/Home";
 
 class App {
@@ -12,8 +13,8 @@ class App {
 
 	_createLenis() {
 		this.lenis = new Lenis({
-			lerp: 0.1
-		})
+			lerp: 0.1,
+		});
 	}
 
 	_createHome() {
