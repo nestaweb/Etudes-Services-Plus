@@ -1,18 +1,42 @@
-# Vue 3 + TypeScript + Vite
+***Contrat de Licence pour le Développement de Site Internet***
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**1. Parties impliquées**
 
-## Recommended IDE Setup
+Ce contrat de licence est conclu entre Webmind, désigné par la suite comme le "Développeur", dont le siège social est basé à Angoulême, et Etudes Services Plus, désigné(e) par la suite comme le "Client".
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+**2. Objet du Contrat**
 
-## Type Support For `.vue` Imports in TS
+Webmind, représenté par Nesta Loisy, s'engage à fournir des services de développement de site internet utilisant les langages HTML, SCSS, JavaScript, Vue.js et TypeScript, conformément aux spécifications convenues avec le Client.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+**3. Propriété Intellectuelle et Licence**
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Webmind conserve la propriété intellectuelle du site internet, y compris le code source. Toutefois, une licence non exclusive d'utilisation est octroyée au Client une fois que le paiement total a été effectué. Cette licence accorde au Client le droit d'utiliser le site internet à des fins non commerciales, de le modifier pour son propre usage, sous réserve de mentionner Webmind pour toute modification substantielle non-initiée par ce dernier.
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Permissions accordées au Client :
+
+Utilisation du site internet pour des fins non commerciales, telles que la présentation, sans droit de revente.
+Possibilité de modifier le site internet pour l'adapter à ses besoins propres, sous réserve de mentionner Webmind pour toute modification majeure non-initiée par ce dernier.
+Limitations pour le Client :
+
+Le Client n'a pas le droit de revendre le site internet ou d'en transférer la licence à des tiers sans consentement préalable de Webmind.
+Le Client ne peut utiliser le site internet à des fins commerciales ou pour des activités autres que celles spécifiées sans autorisation explicite.
+
+**4. Utilisation du Site**
+
+Le site internet est destiné à un usage non commercial, tel qu'une landing page à des fins de présentation. Le Client est autorisé à modifier le site pour son propre usage, à condition de mentionner Webmind pour toute modification substantielle non-initiée par ce dernier.
+
+**5. Maintenance et Support**
+
+Webmind fournira une maintenance annuelle incluse dans le coût initial. Cette maintenance couvrira les correctifs de bugs et les ajustements mineurs. Le Client peut contacter Webmind pour des services supplémentaires moyennant des frais supplémentaires.
+
+**6. Sauvegarde de Données**
+
+Le site internet développé ne stockera aucune donnée. Le Client est responsable de mettre en place ses propres mesures de sauvegarde si nécessaire.
+
+**7. Confidentialité**
+
+Toutes les informations échangées entre Webmind et le Client dans le cadre du projet sont considérées comme confidentielles. Aucune des parties ne divulguera ces informations à des tiers sans consentement mutuel, à moins que cela ne soit requis par la loi.
+
+**8. Juridiction et Résolution des Litiges**
+
+Ce contrat est régi et interprété conformément aux lois d'Angoulême. Tout litige découlant de ce contrat sera soumis à la juridiction exclusive des tribunaux compétents d'Angoulême.
