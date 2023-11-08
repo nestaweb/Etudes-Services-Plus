@@ -2,7 +2,7 @@
 
 **1. Parties impliquées**
 
-Ce contrat de licence est conclu entre Webmind, désigné par la suite comme le "Développeur", dont le siège social est basé à Angoulême, et [Nom du Client], désigné(e) par la suite comme le "Client".
+Ce contrat de licence est conclu entre Webmind, désigné par la suite comme le "Développeur", dont le siège social est basé à Angoulême, et Etudes Services Plus, désigné(e) par la suite comme le "Client".
 
 **2. Objet du Contrat**
 
