@@ -2,6 +2,11 @@
 	@include page-grid;
 	align-items: center;
 	padding-block: 2.5vh;
+	position: fixed;
+	min-height: 10vh;
+	z-index: 10000;
+	max-height: 15vh;
+	background-color: #F6F6F6;
 
 	&__logo {
 		display: flex;

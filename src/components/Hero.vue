@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<section class="section section--micro--padding">
+	<section class="section section--micro--padding" id="hero" data-section='hero'>
 		<div class="container">
 			<div class="hero">
 				<div class="hero__content">

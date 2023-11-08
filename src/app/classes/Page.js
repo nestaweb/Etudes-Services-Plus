@@ -11,6 +11,7 @@ export default class Page {
 		this._createTextReveals();
 		this._createParallaxImages();
 		this._createImageMultiply();
+		this._createNavBar();
 	}
 
 	_createTextReveals() {
@@ -61,6 +62,60 @@ export default class Page {
 			new ImageMultiply({
 				element: image
 			});
+		});
+	}
+
+	_createNavBar() {
+		const services = document.querySelectorAll("[data-section='service']");
+		const navService = document.querySelector("#nav-service");
+		const home = document.querySelectorAll("[data-section='hero']");
+		const navHero = document.querySelector("#nav-hero");
+		const about = document.querySelectorAll("[data-section='about']");
+		const navAbout = document.querySelector("#nav-about");
+
+		let options = {
+			rootMargin: "-150px 0px -150px 0px",
+			treshold: 1,
+		}
+
+		let observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting)
+					navService.querySelector("p").classList.add("active");
+				else
+					navService.querySelector("p").classList.remove("active");
+				});
+		}, options);
+
+		services.forEach(service => {
+			observer.observe(service);
+		});
+		
+		let observerHero = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting)
+					navHero.querySelector("p").classList.add("active");
+				else
+					navHero.querySelector("p").classList.remove("active");
+				});
+		}, options);
+
+		home.forEach(hero => {
+			observerHero.observe(hero);
+		});
+
+		let observerAbout = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting)
+					navAbout.querySelector("p").classList.add("active");
+				else
+					navAbout.querySelector("p").classList.remove("active");
+				});
+		}, options);
+
+		about.forEach(section => {
+			console.log(section);
+			observerAbout.observe(section);
 		});
 	}
 }

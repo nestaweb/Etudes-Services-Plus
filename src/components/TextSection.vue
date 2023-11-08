@@ -14,13 +14,16 @@
 		},
 		id: {
 			type: String,
+		},
+		section: {
+			type: String,
 		}
 	})
 
 </script>
 
 <template>
-	<section class="section section--small--margin" :id=props.id>
+	<section class="section section--small--margin" :id=props.id :data-section=props.section>
 		<div class="container">
 			<div class="textSection section--small--padding">
 				<TextFade :title=props.title :text=props.text />
