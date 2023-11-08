@@ -1,0 +1,38 @@
+.textSection {
+	width: 90%;
+	margin-inline: auto;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5vw;
+
+	&--dark {
+		background-color: #25205F;
+		color: var(--color-button-text--light);
+
+		h2 {
+			color: var(--color-button-text--light);
+		}
+	}
+
+	.textFade__title {
+		text-transform: capitalize;
+
+		& > .word:nth-of-type(1) {
+			color: #F3921E;
+		}
+	}
+
+	&__img {
+		min-width: 35%;
+		height: 100%;
+		border-radius: 20px;
+		max-height: 80vh;
+		transition: all 0.3s ease-in-out;
+
+		img {
+			height: 160vh !important;
+		}
+	}
+}

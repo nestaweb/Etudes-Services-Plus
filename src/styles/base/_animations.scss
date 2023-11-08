@@ -1,0 +1,133 @@
+[data-animation='text-reveal'] {
+	div {
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: top;
+	}
+	div div {
+		transform: translateY(100%);
+		will-change: transform;
+	}
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
+img {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.image-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+[data-animation='parallax-image'] {
+	overflow: hidden;
+	img {
+		height: 150% !important;
+	}
+}
+
+.lerp-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1.25rem;
+	mix-blend-mode: difference;
+	line-height: 1.1;
+}
+.lerp-wrap span {
+	position:relative;
+	color: #222;
+	width:100px;
+	height:100px;
+	display: inline-flex;
+	justify-content:center;
+	align-items:center;
+	mix-blend-mode: difference;
+	z-index: 0;
+	font-size: clamp(32px, 3vw, 8vw);
+}
+
+[data-animation="button"] {
+	transform: scale(0);
+	transform-origin: 50% 50%;
+	> span {
+		display: inline-block;
+		width: 0px;
+		overflow: hidden;
+	}
+
+	> span span {
+		display: inline-block;
+		transform: translateY(100%);
+		white-space: nowrap;
+	}
+}
+
+.image-multiply {
+	position: relative;
+	width: 100%;
+	min-height: 70vh;
+	height: 100%;
+	border-radius: 20px;
+	transform: rotate(0deg) skew(0deg);
+	object-fit: cover;
+	transition: 0.5s;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: auto;
+		left: 50%;
+		right: 50%;
+		height: 100%;
+		transition: 0.5s;
+		object-fit: cover;
+		border-radius: 20px;
+		transform: translate(-50%, 0);
+	  }
+	  &:hover img:nth-child(4) {
+		transform: translate(-50%, 0) scale(0.85);
+		opacity: 1;
+	  }
+	  &:hover img:nth-child(3) {
+		transform: translate(-50%, 0) scale(0.9);
+		opacity: 0.8;
+		filter: blur(1px);
+	}
+	  &:hover img:nth-child(2) {
+		transform: translate(-50%, 0) scale(0.95);
+		opacity: 0.6;
+		filter: blur(2px);
+	}
+	  &:hover img:nth-child(1) {
+		transform: translate(-50%, 0) scale(1);
+		opacity: 0.4;
+		filter: blur(3px);
+	  }
+
+	  &.is-active {
+		img:nth-child(4) {
+			transform: translate(-50%, 0) scale(0.85);
+			opacity: 1;
+		  }
+		img:nth-child(3) {
+			transform: translate(-50%, 0) scale(0.9);
+			opacity: 0.8;
+			filter: blur(1px);
+		}
+		img:nth-child(2) {
+			transform: translate(-50%, 0) scale(0.95);
+			opacity: 0.6;
+			filter: blur(2px);
+		}
+		img:nth-child(1) {
+			transform: translate(-50%, 0) scale(1);
+			opacity: 0.4;
+			filter: blur(3px);
+		}
+	  }
+}

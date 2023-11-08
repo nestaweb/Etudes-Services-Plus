@@ -5,17 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc && vite build",
     "preview": "vite preview"
-  },
-  "devDependencies": {
-    "sass": "^1.69.5",
-    "vite": "^4.4.5"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.27",
     "gsap": "^3.12.2",
-    "locomotive-scroll": "^4.1.4",
-    "split-type": "^0.3.4"
+    "split-type": "^0.3.4",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.69.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
   }
 }
