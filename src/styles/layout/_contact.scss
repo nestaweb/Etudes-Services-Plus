@@ -1,0 +1,25 @@
+.contact {
+	width: 90%;
+	margin-inline: auto;
+
+	&__heading {
+		font-weight: 500;
+		font-size: 50px;
+		color: #1e194c;
+		text-transform: capitalize;
+
+		& > .word:nth-of-type(1) {
+			color: #F3921E;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		&__img {
+			width: 40%;
+		}
+	}
+}

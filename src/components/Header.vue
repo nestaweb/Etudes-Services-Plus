@@ -23,7 +23,7 @@
 			<a id="nav-about" @click="g_scroll('#about')">
 				<p class="header__links__item">Qui sommes nous</p>
 			</a>
-			<a href="#contact">
+			<a id="nav-contact" @click="g_scroll('#contact')">
 				<p class="header__links__item">Contact</p>
 			</a>
 		</div>

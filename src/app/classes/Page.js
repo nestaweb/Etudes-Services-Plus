@@ -72,6 +72,8 @@ export default class Page {
 		const navHero = document.querySelector("#nav-hero");
 		const about = document.querySelectorAll("[data-section='about']");
 		const navAbout = document.querySelector("#nav-about");
+		const contact = document.querySelectorAll("[data-section='contact']");
+		const navContact = document.querySelector("#nav-contact");
 
 		let options = {
 			rootMargin: "-150px 0px -150px 0px",
@@ -81,7 +83,10 @@ export default class Page {
 		let observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting)
+				{
+					this._removeAll();
 					navService.querySelector("p").classList.add("active");
+				}
 				else
 					navService.querySelector("p").classList.remove("active");
 				});
@@ -94,7 +99,10 @@ export default class Page {
 		let observerHero = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting)
+				{
+					this._removeAll();
 					navHero.querySelector("p").classList.add("active");
+				}
 				else
 					navHero.querySelector("p").classList.remove("active");
 				});
@@ -107,7 +115,10 @@ export default class Page {
 		let observerAbout = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting)
+				{
+					this._removeAll();
 					navAbout.querySelector("p").classList.add("active");
+				}
 				else
 					navAbout.querySelector("p").classList.remove("active");
 				});
@@ -117,5 +128,38 @@ export default class Page {
 			console.log(section);
 			observerAbout.observe(section);
 		});
+
+		let observerContact = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting)
+				{
+					this._removeAll();
+					navContact.querySelector("p").classList.add("active");
+				}
+				else
+				{
+					navContact.querySelector("p").classList.remove("active");
+					navAbout.querySelector("p").classList.add("active");
+
+				}
+				});
+		}, options);
+
+		contact.forEach(section => {
+			console.log(section);
+			observerContact.observe(section);
+		});
+	}
+
+	_removeAll() {
+		const navHero = document.querySelector("#nav-hero");
+		const navService = document.querySelector("#nav-service");
+		const navAbout = document.querySelector("#nav-about");
+		const navContact = document.querySelector("#nav-contact");
+
+		navHero.querySelector("p").classList.remove("active");
+		navService.querySelector("p").classList.remove("active");
+		navAbout.querySelector("p").classList.remove("active");
+		navContact.querySelector("p").classList.remove("active");
 	}
 }
