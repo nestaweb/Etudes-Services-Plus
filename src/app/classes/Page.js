@@ -3,6 +3,7 @@ import Button from "../animations/Button";
 import ParallaxImage from "../animations/ParallaxImage";
 import TextFade from "../animations/TextFade";
 import ImageMultiply from "../animations/ImageMultiply";
+import Fade from "../animations/Fade";
 
 export default class Page {
 	constructor() {
@@ -12,6 +13,7 @@ export default class Page {
 		this._createParallaxImages();
 		this._createImageMultiply();
 		this._createNavBar();
+		this._createFadeAnim();
 	}
 
 	_createTextReveals() {
@@ -161,5 +163,15 @@ export default class Page {
 		navService.querySelector("p").classList.remove("active");
 		navAbout.querySelector("p").classList.remove("active");
 		navContact.querySelector("p").classList.remove("active");
+	}
+
+	_createFadeAnim() {
+		const sections = [...document.querySelectorAll("[data-animation='fade']")];
+
+		sections.forEach((section) => {
+			new Fade({
+				element: section
+			});
+		});
 	}
 }
