@@ -5,6 +5,7 @@ import Service from './components/Service.vue'
 import TextSection from './components/TextSection.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -19,4 +20,5 @@ import Contact from './components/Contact.vue'
     <About />
   </div>
   <Contact />
+  <Footer />
 </template>
