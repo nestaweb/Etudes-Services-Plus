@@ -15,7 +15,7 @@
 						<p class="contact__content__infos__item">Courriel : <a href="mailto:contact@groupe-esp.com">contact@groupe-esp.com</a> | <a href="https://www.groupe-esp.com" target="_blank">www.groupe-esp.com</a></p>
 					</div>
 					<div class="contact__content__img">
-						<img src="../assets/full-logo.png" alt="full logo esp">
+						<img src="../assets/full-logo.webp" alt="full logo esp">
 					</div>
 				</div>
 			</div>

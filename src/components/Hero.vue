@@ -10,7 +10,7 @@
 					<div class="hero__head">
 						<h1 class="hero__heading" data-animation='text-reveal'>ESP : Concevoir & Diffuser</h1>
 						<div class="hero__head__img">
-							<img src="../assets/esp-local.jpeg" alt="esp local">
+							<img src="../assets/esp-local.webp" alt="esp local">
 						</div>
 					</div>
 					<div class="hero__shape">

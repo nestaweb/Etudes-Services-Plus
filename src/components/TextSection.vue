@@ -29,7 +29,7 @@
 				<TextFade :title=props.title :text=props.text />
 				<div class="textSection__img" data-animation="parallax-image" data-popup="fade-up">
 					<!-- <ImageMultiply src="./src/assets/imgholder.jpg" alt="print image"/> -->
-					<img src="../assets/imgholder.jpg" alt="print image">
+					<img src="../assets/imgholder.webp" alt="print image">
 				</div>
 			</div>
 		</div>

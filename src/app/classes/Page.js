@@ -127,7 +127,6 @@ export default class Page {
 		}, options);
 
 		about.forEach(section => {
-			console.log(section);
 			observerAbout.observe(section);
 		});
 
@@ -148,7 +147,6 @@ export default class Page {
 		}, options);
 
 		contact.forEach(section => {
-			console.log(section);
 			observerContact.observe(section);
 		});
 	}

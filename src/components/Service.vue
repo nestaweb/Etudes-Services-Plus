@@ -8,7 +8,7 @@
 			<div class="services">
 				<div class="services__left" data-animation="parallax-image" data-popup="popup">
 					<!-- <ImageMultiply src="./src/assets/imgholder.jpg" alt="print image"/> -->
-					<img src="../assets/imgholder.jpg" alt="print image">
+					<img src="../assets/imgholder.webp" alt="print image">
 				</div>
 				<div class="services__content">
 					<h2 class="services__content__title" data-animation='text-reveal'>Nos Services </h2>
