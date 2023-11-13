@@ -66,6 +66,10 @@
 				color: var(--color-text--black);
 			}
 		}
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}
 
 	&__button {

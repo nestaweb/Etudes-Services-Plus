@@ -36,4 +36,16 @@
 			width: auto;
 		}
 	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+
+		p.textFade {
+			font-size: 20px;
+		}
+
+		&__img {
+			max-height: 40vh;
+		}
+	}
 }
